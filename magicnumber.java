@@ -7,14 +7,13 @@ public class magicnumber{
             num=num/10;
         }
         
-
         if(ans>9){
-            System.out.println(num+" "+ans);
             num=ans;
             ans=0;
             System.out.println(num+" "+ans);
             magic(num,ans);
         }
+        System.out.println(num+" "+ans);
         return ans;
 
     }
