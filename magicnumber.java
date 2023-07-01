@@ -6,8 +6,10 @@ public class magicnumber{
             ans=ans+(num%10);
             num=num/10;
         }
+        
 
         if(ans>9){
+            System.out.println(num+" "+ans);
             num=ans;
             ans=0;
             System.out.println(num+" "+ans);
@@ -23,10 +25,10 @@ public class magicnumber{
         int ans=0;
         int val=magic(num,ans);
         if(val==1){
-            System.out.println("Given number "+num+" is a magic number.");
+            System.out.println("Given number "+num+" is a magic number."+val);
         }
         else{
-            System.out.println("Given number "+num+" is not a magic number.");
+            System.out.println("Given number "+num+" is not a magic number."+val);
         }
     }
 }
